@@ -1,0 +1,48 @@
+html, input, select, textarea {
+/*	font-family: monospace;*/
+	font-family: "Microsoft YaHei", monospace;
+	font-size: 12px;
+}
+
+fieldset, li, ul, p {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.clr {
+	clear: both;
+}
+
+.none {
+	display: none;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.disable {
+	background-color: #eee;
+}
+
+.cgray {
+	color: gray;
+}
+
+.btn {
+	vertical-align: middle;
+	border: solid 1px gray;
+	cursor: pointer;
+}
+
+iframe{
+	border-style: none;
+}

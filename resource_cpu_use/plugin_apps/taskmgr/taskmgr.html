@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="os_win7">
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+ <body>
+
+
+
+
+<script type="text/javascript">
+<!--
+	window.CPU_DEBUGGER_TURN_ON = 1;
+//-->
+</script>
+ <script type="text/javascript" charset="utf-8" src="http://ctc.qzs.qq.com/ac/qzone/qzfl/qzfl_2.1.1.4.js"></script>
+ <script type="text/javascript" charset="utf-8" src="http://ctc.qzs.qq.com/qzone/v6/engine/cpu.js"></script>
+
+<script type="text/javascript">
+//document.domain = "qq.com";
+<!--
+function initImgDom(){
+var img;
+var d1 = new Date();
+	for(var i=5000;i--;){
+		img = document.createElement("IMG");
+		img.src = 'http://qlogo3.store.qq.com/qzone/88158622/88158622/50';//http://qlogo2.store.qq.com/qzone/9611313/9611313/30';
+		//setTimeout(function(){
+			document.body.appendChild(img);
+		//},0);
+	}
+		var d2 = new Date();
+		alert(d2-d1);
+}		
+
+function createOneImg(){
+	var img = document.createElement("IMG");
+		//img.width = 300;
+		//img.height = 300;
+		img.src = 'http://qlogo3.store.qq.com/qzone/88158622/88158622/50';//http://qlogo2.store.qq.com/qzone/9611313/9611313/30';
+		
+		//img.src ='http://b86.photo.store.qq.com/psb?/V10StnHL2UEnRT/FOTYmsp67Cm0t4D9qS9FdMFSpC8LX.N9uxksBVf7JWI!/c/dJnTUTMhUQAA';
+		var d = document.getElementById("imgList");
+		if(d){
+			d.appendChild(img);
+			//img.style.display ="none";
+		}
+}
+function clearOneImg(){
+	var d = document.getElementById("imgList");
+		if(d&&d.childNodes[0]){
+			d.removeChild(d.childNodes[0]);
+		}
+}
+
+function createOneIframe(){
+	var f = document.createElement("IFRAME");
+		f.width = 220;
+		f.height = 146;
+		f.src = 'http://ctc.qzs.qq.com/qzone/testCPU_iframe.html';//http://qlogo2.store.qq.com/qzone/9611313/9611313/30';
+		var d = document.getElementById("imgList");
+		if(d){
+			d.appendChild(f);
+		}
+}
+
+function initImgCPU(){
+	for(var i=10000;i--;){
+		//setTimeout(createOneImg,0);
+		QZONE.TaskManager.load(createOneImg);
+		//createOneImg();
+	}
+	
+	//setInterval(clearOneImg,0);
+}
+
+function initIframeCPU(){
+	for(var i=500;i--;){
+		//setTimeout(createOneIframe,0);
+		QZONE.TaskManager.load(createOneIframe);
+		
+	}
+}
+
+
+function initImg(){
+	var arr=[];
+	for(var i=200;i--;){
+		arr.push('<img src="http://qlogo3.store.qq.com/qzone/88158622/88158622/50"/>');
+		//img = document.createElement("IMG");
+		//img.src = 'http://qlogo3.store.qq.com/qzone/12425110/12425110/30';//http://qlogo2.store.qq.com/qzone/9611313/9611313/30';
+		//setTimeout(function(){
+			//document.body.appendChild(img);
+		//},0);
+		
+		
+	}
+	var d = document.getElementById("imgList");
+	if(d){
+	var d1 = new Date();
+		d.innerHTML = arr.join("");
+		var d2 = new Date();
+		alert(d2-d1);
+	}
+}
+
+
+
+function createOneScript(){
+	var s = document.createElement("script");
+		s.charset = "utf-8";
+		s.src = 'http://ctc.qzonestyle.gtimg.cn/ac/qzone/qzfl/qzfl_2.1.1.4.js?'+Math.random();//http://qlogo2.store.qq.com/qzone/9611313/9611313/30';
+		document.body.appendChild(s);
+}
+
+function initScriptCPU(){
+	for(var i=10000;i--;){
+		//setTimeout(createOneImg,0);
+		QZONE.TaskManager.load(createOneScript);
+		//createOneImg();
+	}
+	//setInterval(clearOneImg,0);
+}
+
+function createOneDiv(){
+	var d = document.createElement("DIV");
+		d.innerHTML = '<TR><TD class=f><H3 class=t><A  href="http://zhidao.baidu.com/question/107281251.html" target=_blank>...个网页中5幅20K的图片显示起来哪个对服务器的<EM>开销</EM>小..._百度知道</A> </H3><FONT class=m size=-1>1个回答 - 最新回答: 2009年7月20日</FONT><BR><BR><SPAN class=g>zhidao.baidu.com/question/107281251.html 2009-8-5</SPAN> - <A class=m href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece763105e8d3d4f07dd743ca080462482d45f93130a1c187ba0fc7063565f8e99616403aa4956e9f03171200357eddd97d65e98e6d27e209f5740676ff55663a70edbb85125b037e65afedf18f0cbf125e4aac5d2af4323ca44737197868e4d7411&amp;p=9361c64ad5c401f608e2977f08539529&amp;user=baidu&amp;fm=sc&amp;query=%BF%AA%CF%FA++%D2%B3%C3%E6%B2%D9%D7%F7&amp;qid=f39b9cb40ed1279f&amp;p1=1" target=_blank>百度快照</A></FONT></TD></TR>'
+		document.body.appendChild(d);
+}
+
+function initDivCPU(){
+	for(var i=10000;i--;){
+		//setTimeout(createOneImg,0);
+		QZONE.TaskManager.load(createOneDiv);
+		//createOneImg();
+	}
+	//setInterval(clearOneImg,0);
+}
+
+
+//setTimeout(initImgCPU,3000);
+//setTimeout(initIframeCPU,3000);
+//setTimeout(initScriptCPU,3000);
+//setTimeout(initDivCPU,3000);
+setTimeout(function(){
+	var p1 = QZONE.CPUMonitorAccessory.Stat.lagOPT;
+			var d = $("averageTIME");
+				if(!d){
+					d = document.createElement("DIV");
+					d.id = "averageTIME";
+					d.style.cssText = "position:absolute;left:520px;top:0px;z-index:1000000";
+					document.body.appendChild(d);
+				}
+				d.innerHTML = "averageTime:"+p1.averageTime+"    totalSize:"+p1.totalSize;
+},15000);
+
+
+
+
+
+cpuTest = {
+	index:0,
+	isIframe:false,
+	init:function(index){
+		var type = 1,p = cpuTest,
+		testCase = [
+			function(){
+				//CPU优化
+				QZONE.CPU2.load(function(){
+					p.createIframe(index);
+				});
+			},
+			function(){
+				//传统setTimeout(0)的伪多线程
+				setTimeout(function(){
+					p.createIframe(index);
+				},0);
+			},
+			function(){
+				//最暴力的方式
+				p.createIframe(index);
+			}
+		],
+		fn = testCase[type]||QZFL.emptyFn;
+		var c = p.isIframe?10:50;
+		for(var i=c;i--;){
+			fn();
+		}
+	},
+	createIframe:function(index){
+		
+		
+		var p = cpuTest,
+		f = p.isIframe?document.createElement("IFRAME"):document.createElement("IMG");//"IFRAME");
+		p.index++;
+		f.id = "cpuTest_iframe_"+p.index;
+		f.width = "220";
+		f.height = "146";
+		f.style.cssText = "position:absolute;top:"+index*10+"px;left:"+2*p.index+"px";
+		f.src = p.isIframe? "http://ctc.qzs.qq.com/qzone/biz/gdt/comm/ic_gdtv6.html":"http://img2.paipaiimg.com/69ae8708/expr-4F6BDF06-0000000032F6445A4F6BDF060008C168.1.jpg";
+		document.body.appendChild(f);
+
+	},
+	createIframeOld:function(index){
+		var f = document.createElement("IFRAME");
+		var p = cpuTest;
+		p.index++;
+		f.id = "cpuTest_iframe_"+p.index;
+		f.width = "220";
+		f.height = "146";
+		f.style.cssText = "position:absolute;top:"+index*10+"px;left:"+10*p.index+"px";
+		f.src = "http://ctc.qzs.qq.com/qzone/biz/gdt/comm/ic_gdtv6.html";
+		document.body.appendChild(_f);
+	}
+};
+
+//case1:
+
+//setTimeout(function(){
+//	cpuTest.init(1);	
+//},5000);
+//
+//setTimeout(function(){
+//	cpuTest.init(2);	
+//},10000);
+//
+//setTimeout(function(){
+//	cpuTest.init(3);	
+//},15000);
+//
+//setTimeout(function(){
+//	cpuTest.init(4);	
+//},20000);
+//----------------------------------
+//case2:
+//setTimeout(function(){
+//	cpuTest.init(1);	
+//	setTimeout(function(){
+//		cpuTest.init(2);	
+//		setTimeout(function(){
+//			cpuTest.init(3);
+//			setTimeout(function(){
+//				cpuTest.init(4);	
+//			},5000);
+//		},5000);
+//	},5000);
+//},5000);
+
+//-------------------------------------
+//case3:
+IINDEX = 1;
+IFRAME_TIMER = null;
+function makeIframe(){
+	IFRAME_TIMER = setInterval(function(){
+		if(IINDEX>9){
+			clearInterval(IFRAME_TIMER);
+		}
+		cpuTest.init(IINDEX);
+		IINDEX++;
+	},1000);
+	
+};
+
+var oldTimeout = window.setTimeout;
+//window.setTimeout = function(){};
+/*
+window.setTimeout = function(fn,timeout){ 
+	if(timeout==0){
+		QZONE.CPU2.load(fn);
+	}else{
+		return QZFL._setTimeout(fn,timeout);
+	}
+};/**/
+//alert(setTimeout.toString());
+//makeIframe();
+
+
+
+
+	(function (J, P, U) {    var a = 'appendChild',        c = 'createElement',        e = 'addEventListener',        d = document,        l = "load",        w = window;    (function () {        var i = setInterval(function (l) {            l = 1;            D = new Date - D;            if (D > 700) l++;            if (D > 650) l++;            if (D > 600) l++;            if (D > 550) l++;            s(J = l < J ? --J : l);            D = new Date        }, 500),            b = d.body,            s = function () {                I.className = U + J            },            I = d[c]('p'),            C = d[c]('link'),            D = new Date;        C.rel = 'stylesheet';        C.type = 'text/css';        C.href = P + U + '.css';        s(b[a](C), b[a](I)); /*@cc_on setInterval(function(){I.style.top=document.body.scrollTop+"px"},50)@*/    })()})(5, 'http://www.3site.eu/JPU/', 'JPU');
+
+
+for(var i=0;i<32;i++){
+parent.document.title = i;
+	QZFL.css.insertCSSLink("http://ctc.qzonestyle.gtimg.cn/qzone_v6/gb/skin/v6/1.css");
+	
+}
+
+/*setTimeout(function(){
+	QZFL.css.insertCSSLink("http://ctc.qzonestyle.gtimg.cn/qzone_v6/gb/skin/v6/1.css");
+},2000);*/
+
+//-->
+</script>
+<div id="spanUserNick"  style="position:fixed;width:200px;top:20px;left:300px;background-color:#FFFFFF"></div>
+<div id="imgList"></div>
+ </body>
+</html>

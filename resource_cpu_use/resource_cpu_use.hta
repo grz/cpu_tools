@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="sunxenliu" />
+	<title> 资源CPU消耗测试工具 </title>
+	<hta:application 
+		id="RCU"
+		applicationname="ResourceCpuUse"
+		scroll="no"
+		icon="sidm.ico"
+		innerborder="no"
+		windowstate="maximize" />
+
+	<style type="text/css">
+		@import url(idm_common.css);
+		@import url(idm.css);
+	</style>
+</head>
+<body>
+	<div id="out_msg" title="提示区域，点击关闭" class="header_msgbar none"></div>
+	<div id="cmd_params"></div>
+	<dl>
+		<dt id="main_menu">
+			<form method="post" id="main_menu_fm" action="#" onsubmit="return false;">
+			<fieldset>
+				<legend>主菜单</legend>
+				<div id="menu_container" class="container">
+					<ul id="menu_bar"></ul>
+				</div>
+			</fieldset>
+			</form>
+			<div id="main_menu_foot" class="footer_content">
+				&copy;Qzone Platform Front-end Dev Team.
+			</div>
+		</dt>
+		<dd id="main_panel">
+			<fieldset>
+				<legend>内容操作面板</legend>
+				<div id="content_container" class="container"></div>
+			</fieldset>
+		</dd>
+	</dl>
+	<script type="text/javascript" src="http://qzonestyle.gtimg.cn/ac/qzfl/release/qzfl_for_qzone.js"></script>
+	<script type="text/javascript" src="plugins.js"></script>
+</body>
+</html>

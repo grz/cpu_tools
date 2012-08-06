@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>flash性能检测</title>
+<script type="text/javascript" src="http://ctc.qzs.qq.com/ac/qzone/qzfl/qzfl_2.1.1.5.js"></script>
+<script type="text/javascript" src="http://qzs.qq.com/qzone/v6/engine/cpu/cpu.js"></script>
+<script type="text/javascript" src="cpu_check.js"></script>
+</head>
+<body>
+<div id="sandbox"></div>
+
+<script type="text/javascript">
+function pass(){
+	alert("pass");
+}
+
+function notPass(){
+	alert("not pass!")
+}
+
+checkCPUBusyPercentage(
+		0.1, 5, notPass, pass,
+		$("sandbox"), "http://ctc.i.gtimg.cn/qzone/space_item/brand/orig/12.swf");
+</script>
+</body>
+</html>

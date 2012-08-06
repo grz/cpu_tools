@@ -1,0 +1,58 @@
+
+#main_menu {
+	float: left;
+	width: 200px;
+	height: 500px;
+	margin: 0 5px 0 0;
+}
+
+#main_panel {
+	min-height: 500px; /* no use */
+	_height: 500px; /* no use */
+	_width:800px;
+}
+
+#main_menu fieldset, #main_panel fieldset {
+	height: 100%;
+	min-height: 500px;
+}
+
+#main_panel fieldset {
+	padding-right: 15px;
+}
+
+.container {
+	width: 100%;
+	margin: 5px 5px 5px 7px;
+	height: 950px;
+}
+
+#menu_bar li {
+	text-align: center;
+	margin: 5px 0 5px;
+	padding-right: 20px;
+}
+
+#out_msg {
+	background-color: white;
+	color: red;
+	cursor: pointer;
+	border: solid 1px red;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+#toolbar_proj_select {
+	width: 160px;
+	vertical-align: middle;
+}
+
+input.app_btn {
+	width: 100px;
+	font-size: 12px;
+	padding-top: 2px;
+}
+
+.footer_content {
+	font-size: 9px;
+}

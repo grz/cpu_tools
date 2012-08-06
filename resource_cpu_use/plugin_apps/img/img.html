@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>图片性能检测</title>
+<style type="text/css">
+@import url(../../idm_common.css);
+.line{
+	border-bottom:1px solid #ccc; 
+	margin:10px 0;
+}
+.app_btn{
+	position:relative;
+	float: right;
+	top:-30px;
+}
+#conf{
+	margin:110px 0 10px; 
+	border-top:1px solid #ccc; 
+	border-bottom:1px solid #ccc; 
+	padding:10px 0px;
+}
+#copy{
+	margin-left:10px;
+}
+</style>
+</head>
+<body>
+<div id="conf">
+	图片文件url <input id="url" style="width:500px;"><br>
+	同时显示数量 <input id="amount">
+	CPU使用率 <input id="cpu">
+	运行时间(ms) <input id="time">
+	输出结果到文件 <input id="out_file">
+	<br><span style="color:#c66">提示：可以用脚本自动执行命令</span> <span id="cmd"></span> 
+		 <input class="btn" type="button" id="copy" value="复制命令">
+	<input class="btn app_btn" type="button" id="start" value="开始测试">
+</div>
+<div id="sandbox"></div>
+
+<script type="text/javascript" src="http://ctc.qzs.qq.com/ac/qzone/qzfl/qzfl_2.1.1.5.js"></script>
+<script type="text/javascript" src="http://qzs.qq.com/qzone/v6/engine/cpu/cpu.js"></script>
+<script type="text/javascript" src="../../common.js"></script>
+<script type="text/javascript" src="img.js"></script>
+</body>
+</html>

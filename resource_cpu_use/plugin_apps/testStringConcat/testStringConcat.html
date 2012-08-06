@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="os_win7">
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+ <body>
+
+
+
+
+<script type="text/javascript">
+<!--
+	window.CPU_DEBUGGER_TURN_ON = 1;
+//-->
+</script>
+ <script type="text/javascript" charset="utf-8" src="http://ctc.qzs.qq.com/ac/qzone/qzfl/qzfl_2.1.1.4.js"></script>
+ <script type="text/javascript" charset="utf-8" src="http://ctc.qzs.qq.com/qzone/v6/engine/cpu.js"></script>
+
+<script type="text/javascript">
+
+/*
+
+	var d1 = new Date();
+var output=[],CCC=20;
+
+
+function runOne(){
+	for(var i=0;i<12000;i++){
+		document.createElement("iframe");
+	}
+}
+
+function testSetTimeout(){
+	var d = [],e=[],f=0,sum=0;
+	var timer2 = setTimeout(function(){
+			
+			runOne();
+
+			e.push(+new Date());
+			f++;
+			if(f==CCC){
+				clearTimeout(timer2);
+				for(var i=1;i<e.length;i++){
+					d.push(e[i]-e[i-1]);
+					sum+=(e[i]-e[i-1]);
+				}
+				//document.write(d);
+				output = output.concat(d);
+				output.push("avg:"+Math.round(sum/d.length));
+				var div = document.createElement("div");
+				div.innerHTML = (output.join("  "));
+				div.style.cssText = "position:absolute;top:300px";
+				document.body.appendChild(div);
+			}else{
+				setTimeout(arguments.callee,50);
+			}
+		},50);
+}
+
+function testSetInterval(){
+	output.push("setInterval:");var a =[], b=[],c=0,sum=0;
+	var timer = setInterval(function(){
+			
+			runOne();
+
+			b.push(+new Date());
+			c++;
+			if(c==CCC){
+				clearInterval(timer);
+				for(var i=1;i<b.length;i++){
+					a.push(b[i]-b[i-1]);
+					sum+=b[i]-b[i-1];
+				}
+				output = output.concat(a);
+				output.push("avg:"+Math.round(sum/a.length)+"<br>setTimeout:");
+				//document.write(a+"<br>");
+				testSetTimeout();
+			}
+		},50);
+}
+*/
+document.write(1);
+  
+/*(function(){
+
+var p = testTimoutAndInterface = {
+	COUNT:2000,
+	DELAY:50,
+	timeOutID:null,
+	intervalID:null,
+	doit:function(){
+		for(var i=p.COUNT;i--;){
+			//p.timeout();
+			p.interval();
+		}
+	},
+	timeout:function(){
+		var x = [];
+		for (var i=0; i<500; i++) {
+		  x.push("qwerttyuiop");
+		}
+var result = x.join("");
+	},
+	interval:function(){
+		var x = "";
+		for (var i=0; i<500; i++) {
+		  x = x + "qwerttyuiop";
+		}
+	}
+};
+p.doit();
+})();
+*/
+//testSetInterval();
+
+
+
+
+
+
+
+</script>
+<div id="spanUserNick"  style="position:fixed;width:200px;top:20px;left:300px;background-color:#FFFFFF"></div>
+<div id="imgList"></div>
+ </body>
+</html>
